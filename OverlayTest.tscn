@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://s72d384618uf"]
+
+[ext_resource type="Material" uid="uid://ckxasd8mtwa3q" path="res://external/crossout/unshaded_flat.tres" id="1_copep"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_pprsc"]
+material = ExtResource("1_copep")
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_pprsc")
